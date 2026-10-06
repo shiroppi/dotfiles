@@ -25,6 +25,9 @@
 #   source = "linux-config"
 #   target = "~/.config"
 
+[dots]
+".gemini" = "config/agents/gemini"
+
 [[auto]]
 source = "config/shared"
 target = "~/.config"

@@ -1,0 +1,22 @@
+{
+  "colorScheme": "colorblind-friendly dark",
+  "model": "Gemini 3.1 Pro (High)",
+  "trustedWorkspaces": [
+    "/home/shiroppi/Documents/dotfiles/config/shared/fish",
+    "/home/shiroppi/dotfiles"
+  ],
+  "permissions": {
+    "allow": [
+      "command(git status)",
+      "command(git diff)",
+      "command(git log)",
+      "command(git show)",
+      "command(git add)",
+      "command(git apply)",
+      "command(git commit)",
+      "command(git stash)",
+      "command(go build)",
+      "command(go test)"
+    ]
+  }
+}
