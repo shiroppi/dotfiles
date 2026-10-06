@@ -1,0 +1,58 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+scan_timeout = 10
+format = "${custom.os_linux}${custom.os_macos}$all"
+right_format = "$cmd_duration$time"
+
+[character]
+error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold green)"
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+format = "in 🏠 [$path](bold cyan) "
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
+
+[aws.region_aliases]
+ap-northeast-1 = "jp"
+
+[gcloud]
+format = 'on [☁️ $project]($style) '
+
+[custom.arch]
+command = "uname -m"
+when = '[ "$(uname -m)" = "x86_64" ]'
+os = "macos"
+style = "bold yellow"
+format = "[$output]($style) "
+
+[docker_context]
+format = "via [🐋 $context](bold blue) "
+
+[git_branch]
+symbol = " "
+
+[username]
+style_user = "bold white"
+style_root = "bold red"
+format = "🌱 [$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '@[$hostname](bold red) '
+disabled = false
+
+[status]
+disabled = false
+format = '[✘ $status]($style) '
+
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = '%H:%M'
