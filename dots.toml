@@ -1,0 +1,30 @@
+# dots.toml - declarative dotfiles configuration.
+#
+# [dots] maps a target path to a source path (relative to this file).
+# Quote target paths. "~" is the home directory.
+#
+#   [dots]
+#   "~/.vimrc" = "vim/vimrc"
+#
+# [dots.<os>] overrides [dots] on one OS (linux, darwin, windows, ...):
+#
+#   [dots.windows]
+#   "~/.vimrc" = "vim/windows-vimrc"
+#
+# [[auto]] links every file below source into target, optionally skipping
+# paths matched by ignore patterns:
+#
+#   [[auto]]
+#   source = "config"
+#   target = "~/.config"
+#   ignore = ["**/*.bak"]
+#
+# [[auto.<os>]] adds or overrides rules of an [[auto]] group on one OS:
+#
+#   [[auto.linux]]
+#   source = "linux-config"
+#   target = "~/.config"
+
+[[auto]]
+source = "config/shared"
+target = "~/.config"
