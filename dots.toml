@@ -26,7 +26,10 @@
 #   target = "~/.config"
 
 [dots]
+"~/.vimrc" = "config/vimrc"
 "~/.gemini" = "config/agents/gemini"
+"~/.claude/settings.json" = "config/agents/claude/settings.json"
+"~/.claude/CLAUDE.md" = "config/agents/AGENTS-NO_CODEX.md"
 
 [[auto]]
 source = "config/shared"
