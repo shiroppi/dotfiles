@@ -38,3 +38,7 @@ config/agents/gemini/config/*
 config/agents/gemini/antigravity-cli/*
 !config/agents/gemini/antigravity-cli/settings.json
 !config/agents/gemini/config/mcp_config.json
+
+# Claude Code
+config/agents/claude/*
+!config/agents/claude/settings.json

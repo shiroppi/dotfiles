@@ -1,0 +1,33 @@
+{
+  "model": "opus",
+  "enabledPlugins": {
+    "yomiyasu@yomiyasu": true,
+    "antigravity@antigravity-for-claude-code": true,
+    "frontend-design@anthropic-plugin-directory": true,
+    "commit-commands@anthropic-plugin-directory": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "playwright@anthropic-plugin-directory": true,
+    "context7@anthropic-plugin-directory": true,
+    "github@anthropic-plugin-directory": true
+  },
+  "extraKnownMarketplaces": {
+    "yomiyasu": {
+      "source": {
+        "source": "github",
+        "repo": "nanaism/yomiyasu"
+      }
+    },
+    "antigravity-for-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "yuting0624/antigravity-for-claude-code"
+      }
+    }
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
+  "theme": "dark-daltonized"
+}
