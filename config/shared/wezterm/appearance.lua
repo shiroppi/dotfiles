@@ -8,7 +8,7 @@ function M.apply(config)
 	config.color_scheme = "Catppuccin Macchiato"
 	config.font = wezterm.font("UDEV Gothic 35NFLG", { weight = "Bold" })
 	config.font_size = is_mac and 16 or 13
-	config.window_background_opacity = 0.86
+	config.window_background_opacity = 1
 	config.macos_window_background_blur = 30
 	config.window_decorations = "RESIZE"
 	config.window_padding = { left = "1cell", right = "1cell", top = "0.5cell", bottom = "0.5cell" }
