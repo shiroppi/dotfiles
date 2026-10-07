@@ -42,3 +42,7 @@ config/agents/gemini/antigravity-cli/*
 # Claude Code
 config/agents/claude/*
 !config/agents/claude/settings.json
+
+# fish shell
+config/shared/fish/*
+!config/shared/fish/config.fish
