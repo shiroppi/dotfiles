@@ -1,5 +1,5 @@
 -- nvim-treesitter (main ブランチ) の設定
--- パーサーのビルドには tree-sitter CLI (0.26.1 以降) と C コンパイラが必要。詳しくは README.md を参照
+-- パーサーのビルドには tree-sitter CLI (0.26.1 以降) と C コンパイラが必要（npm 版は不可）。
 
 local ts = require("nvim-treesitter")
 
