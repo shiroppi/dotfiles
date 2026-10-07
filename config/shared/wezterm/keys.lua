@@ -19,6 +19,9 @@ function M.apply(config)
 		{ key = "v", mods = "SHIFT|CMD", action = act.PasteFrom("Clipboard") },
 		{ key = "v", mods = "SHIFT|CTRL", action = act.PasteFrom("Clipboard") },
 		{ key = "e", mods = "CTRL", action = act.SendString("nvim\n") },
+		-- Ctrl+Shift+S is sent as plain Ctrl+S by default; use the CSI u
+		-- encoding so Neovim can see it as <C-S-s>.
+		{ key = "s", mods = "SHIFT|CTRL", action = act.SendString("\x1b[115;6u") },
 		{ key = "y", mods = "ALT|CTRL", action = act.ActivateCopyMode },
 		{ key = "p", mods = "ALT|CTRL", action = act.PasteFrom("PrimarySelection") },
 		{ key = "-", mods = "ALT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },

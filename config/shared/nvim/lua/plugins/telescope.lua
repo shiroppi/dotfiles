@@ -28,12 +28,15 @@ telescope.setup({
 		borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
 		mappings = {
 			i = {
-				["<C-S>"] = act.select_vertical,
+				-- <C-S> は <C-s> と同じキーになるので <C-S-s> と書く
+				["<C-S-s>"] = act.select_vertical,
 				["<C-s>"] = act.select_horizontal,
 			},
 			n = {
 				["s"] = act.select_vertical,
 				["S"] = act.select_horizontal,
+				["<C-S-s>"] = act.select_vertical,
+				["<C-s>"] = act.select_horizontal,
 			},
 		},
 	},
@@ -49,6 +52,9 @@ telescope.setup({
 			mappings = {
 				["i"] = {
 					["<C-o>"] = system_open,
+					-- file_browser 既定の <C-s> (toggle_all) を上書きする
+					["<C-S-s>"] = act.select_vertical,
+					["<C-s>"] = act.select_horizontal,
 				},
 				["n"] = {
 					f = false,
@@ -59,6 +65,9 @@ telescope.setup({
 					["r"] = fb_act.rename,
 					["."] = fb_act.toggle_hidden,
 					["s"] = false,
+					-- file_browser はノーマルモードで開くので、こちらにも割り当てる
+					["<C-S-s>"] = act.select_vertical,
+					["<C-s>"] = act.select_horizontal,
 				},
 			},
 		},
