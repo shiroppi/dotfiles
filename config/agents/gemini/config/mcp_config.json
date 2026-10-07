@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.83",
+        "--headless",
+        "--browser",
+        "chromium",
+        "--isolated",
+        "--allowed-origins",
+        "http://localhost:4321",
+        "--output-dir",
+        "/tmp/claude-1001/-home-shiroppi-projects-blog/9254bcdc-2416-4293-9859-228473e769a1/scratchpad/shots"
+      ]
+    }
+  }
+}
