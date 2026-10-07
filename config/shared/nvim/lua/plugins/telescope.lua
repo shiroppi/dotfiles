@@ -28,8 +28,8 @@ telescope.setup({
 		borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
 		mappings = {
 			i = {
-				["<C-s>"] = act.select_vertical,
-				["<C-S-s>"] = act.select_horizontal,
+				["<C-S>"] = act.select_vertical,
+				["<C-s>"] = act.select_horizontal,
 			},
 			n = {
 				["s"] = act.select_vertical,
