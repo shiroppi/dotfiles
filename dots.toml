@@ -27,7 +27,8 @@
 
 [dots]
 "~/.vimrc" = "config/vimrc"
-"~/.gemini" = "config/agents/gemini"
+"~/.gemini/antigravity-cli/settings.json" = "config/agents/gemini/antigravity-cli/settings.json"
+"~/.gemini/config/mcp_config.json" = "config/agents/gemini/config/mcp_config.json"
 "~/.claude/settings.json" = "config/agents/claude/settings.json"
 "~/.claude/CLAUDE.md" = "config/agents/AGENTS-NO_CODEX.md"
 
