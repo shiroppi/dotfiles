@@ -122,13 +122,6 @@ local plugins = {
 		end,
 	},
 	{
-		"dgagn/diagflow.nvim",
-		event = "LspAttach",
-		config = function()
-			require("plugins.diagflow")
-		end,
-	},
-	{
 		"folke/trouble.nvim",
 		cmd = "Trouble",
 		keys = {
