@@ -17,9 +17,12 @@
       "read_url(https://pkg.go.dev)",
       "read_url(https://raw.githubusercontent.com)",
       "read_url(https://charm.land)",
-      "read_url(http://localhost:4321)",
-      "read_file(/tmp/claude-1001/-home-shiroppi-projects-blog/9254bcdc-2416-4293-9859-228473e769a1/scratchpad)",
-      "read_file(/home/shiroppi/projects/blog)",
+      "read_url(http://localhost)",
+      "read_file(/home/shiroppi/projects)",
+      "read_url(file:///home/shiroppi/projects)",
+      "read_file(/tmp/claude-1001)",
+      "read_url(file:///tmp/claude-1001)",
+      "read_file(/tmp/agy-playwright)",
       "read_file(/home/shiroppi/.gemini/antigravity-cli/mcp/playwright)",
       "mcp(playwright/*)"
     ]
