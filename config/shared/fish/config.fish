@@ -35,5 +35,14 @@ alias relogin "exec $SHELL -l"
 # usability
 alias lg lazygit
 
+# custom functions
+while read -l line
+    string match -q -r '^\s*#' $line; and continue
+    string match -q -r '^\s*$' $line; and continue
+
+    set -l kv (string split -m 1 = $line)
+    set -gx $kv[1] $kv[2]
+end <.env
+
 # starship
 source (starship init fish --print-full-init | psub)
