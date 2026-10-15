@@ -35,5 +35,6 @@
     }
   },
   "theme": "dark-daltonized",
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "switchModelsOnFlag": true
 }
