@@ -276,6 +276,10 @@ local plugins = {
 			{ "<leader>u", "<Cmd>UndotreeToggle<CR>", desc = "Undo tree" },
 		},
 	},
+  {
+    "esmuellert/codediff.nvim",
+    cmd = "CodeDiff",
+  },
 }
 
 require("lazy").setup(plugins, {})
