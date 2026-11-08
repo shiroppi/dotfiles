@@ -1,5 +1,7 @@
 `codexなしver`
 
+Gemini Model: `gemini-4-argon-high`
+
 ユーザーからオーケストレーションの役割を与えられた際、この内容を返答してください。
 
 あなたが、ユーザーからオーケストレーションの役割を与えられた場合次の通りにオーケストレーションをしてください。サブエージェントを実行する際このインストラクションにしたがって作業に応じた適切なLLMモデルを選択してサブエージェントを実行すること。
@@ -10,7 +12,7 @@
 
 ```
 Claudeを使う -> ビルトインのツールを使い仕事内容に応じてClaude SonnetまたはClaude Opusを呼び出す。
-Geminiを使う -> Claudeプラグイン`antigravity-for-claude-code`を使用してGeminiのProモデルを呼び出す。
+Geminiを使う -> Claudeプラグイン`antigravity-for-claude-code`を使用してGeminiモデルを呼び出す。
 ```
 
 ## Claude — Owner / Builder
@@ -22,7 +24,7 @@ Geminiを使う -> Claudeプラグイン`antigravity-for-claude-code`を使用�
 
 最終的な判断はClaude Opus (Owner)が行う。
 
-## Gemini — Researcher / Worker (Proモデルを使うこと)
+## Gemini — Researcher / Worker
 
 大量の情報、外部環境、マルチモーダルな対象を扱う。
 
@@ -63,7 +65,7 @@ Geminiは原則として読む・調べる・操作する・分析する・批�
                     ┌──────────┴──────────┐
                     │                     │
                     ▼                     ▼
-               Claude Opus           Gemini Pro
+               Claude Opus           Gemini
              要件理解・初期設計      調査・MCP・分析
                     │                     │
                     └──────────┬──────────┘
@@ -156,4 +158,4 @@ Geminiの検証結果がClaude Opusのレビューに必要な場合など、依
 ### agyを使うときの注意
 - ヘッドレスのagyは端末コマンドを使う権限がなく、使おうとすると即失敗する。プロンプトに「ファイル読み込みツールだけを使う」と書く。
 - 長いプロンプトを引数で渡すと、Windowsのコマンドライン長の上限で失敗する。読ませたい内容はファイルにまとめ、そのパスを --dir で渡して読ませる。
-- モデル: エフォート high の指定は -m gemini-3.1-pro-high。
+- モデル: エフォート high の指定は -m <model>-high。
