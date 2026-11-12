@@ -280,6 +280,13 @@ local plugins = {
     "esmuellert/codediff.nvim",
     cmd = "CodeDiff",
   },
+  {
+		"tyzerrr/agent-review.nvim",
+		event = "VeryLazy",
+		opts = {
+			picker = "telescope",
+		},
+	},
 }
 
 require("lazy").setup(plugins, {})
