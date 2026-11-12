@@ -138,7 +138,7 @@ local plugins = {
 		event = "LspAttach",
 		keys = {
 			{ "<C-q>", "<Cmd>Lspsaga hover_doc<CR>", desc = "Hover doc" },
-			-- 使っていなかったので無効化。KEYMAP_REVIEW.md の「LSP」節も参照
+			-- 使っていないので無効化。
 			-- { "<C-S-q>", "<Cmd>Lspsaga peek_definition<CR>", desc = "Peek definition" },
 			-- { "<C-j>", "<Cmd>Lspsaga diagnostic_jump_next<CR>", desc = "Next diagnostic" },
 			-- { "gd", "<Cmd>Lspsaga finder<CR>", desc = "LSP finder" },
@@ -164,8 +164,9 @@ local plugins = {
 		lazy = false,
 		build = "deno task prepare",
 	},
+  -- ほか
 	{
-		"HidemaruOwO/mdxsnap.nvim",
+		"trendcreate/mdxsnap.nvim",
 		cmd = "PasteImage",
 		ft = { "markdown", "mdx" },
 		config = function()
@@ -276,10 +277,6 @@ local plugins = {
 			{ "<leader>u", "<Cmd>UndotreeToggle<CR>", desc = "Undo tree" },
 		},
 	},
-  {
-    "esmuellert/codediff.nvim",
-    cmd = "CodeDiff",
-  },
   {
 		"tyzerrr/agent-review.nvim",
 		event = "VeryLazy",
