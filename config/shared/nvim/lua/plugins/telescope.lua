@@ -53,8 +53,8 @@ telescope.setup({
 				["i"] = {
 					["<C-o>"] = system_open,
 					-- file_browser 既定の <C-s> (toggle_all) を上書きする
-					["<C-S-s>"] = act.select_vertical,
-					["<C-s>"] = act.select_horizontal,
+					["<C-s>"] = act.select_vertical,
+					["<C-S-s>"] = act.select_horizontal,
 				},
 				["n"] = {
 					f = false,
