@@ -35,6 +35,23 @@ local plugins = {
 		end,
 	},
 	{
+		-- Neovide 風のカーソルアニメーションをターミナルでも出す。
+		-- Neovide 自体は独自のアニメーションを持つので、そちらでは無効にする。
+		"sphamba/smear-cursor.nvim",
+		cond = function()
+			return vim.g.neovide == nil
+		end,
+		opts = {
+			stiffness = 0.8,
+			trailing_stiffness = 0.5,
+			distance_stop_animating = 0.5,
+			smear_between_buffers = true,
+			smear_between_neighbor_lines = true,
+			scroll_buffer_space = true,
+			legacy_computing_symbols_support = false,
+		},
+	},
+	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
 		dependencies = {
