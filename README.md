@@ -22,4 +22,4 @@ I mainly install cli tools, programming language like neovim, nodejs with mise.
 
 But, I cannot decide whether I should install desktop tools like Firefox, Discord.
 It is a tool, while I want it to have a availability that can be removed and switched quickly.
-Possibly, Firefox is often used so that I can write it down in mise config, but Is the tools I little use installed for trial-purpose like some browser, some text editor eligible for being written in mise config?
+Possibly, Firefox is often used, so I can write it down in mise config, but is the tools I little use installed for trial-purpose like some browser, some text editor eligible for being written in mise config?
