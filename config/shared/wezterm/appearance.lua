@@ -21,7 +21,6 @@ function M.apply(config)
 	local fps = wezterm.hostname() == "DESKTOP-GQD4P83" and 120 or 60
 	config.max_fps = fps
 	config.animation_fps = fps
-	config.default_cursor_style = "BlinkingBar"
 	config.cursor_blink_rate = 800
 	config.cursor_blink_ease_in = "EaseIn"
 	config.cursor_blink_ease_out = "EaseOut"
