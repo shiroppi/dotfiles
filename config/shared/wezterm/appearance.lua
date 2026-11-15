@@ -16,10 +16,9 @@ function M.apply(config)
 
 	-- WezTerm cannot animate cursor movement like Neovide; only the
 	-- blink can be smoothed natively, via easing at a higher frame rate.
-	-- The desktop (Windows) runs at 120 fps, the laptop (Mac) at 60 fps.
-	-- This follows the is_mac split already used for font_size above;
-	-- switch this to wezterm.hostname() if two machines ever share an OS.
-	local fps = is_mac and 60 or 120
+	-- The frame rate is split by hostname: the desktop runs at 120 fps,
+	-- every other host (the laptop) at 60 fps.
+	local fps = wezterm.hostname() == "DESKTOP-GQD4P83" and 120 or 60
 	config.max_fps = fps
 	config.animation_fps = fps
 	config.default_cursor_style = "BlinkingBar"
